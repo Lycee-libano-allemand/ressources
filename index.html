@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ressources pédagogiques – Lycée libano-allemand</title>
+<meta name="description" content="Imagiers et lexiques du Lycée libano-allemand (Deutsche Schule Jounieh) pour les élèves et les familles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fraunces:opsz,wght@9..144,600&family=Noto+Naskh+Arabic:wght@400;600&display=swap">
+<style>
+/* Accueil : bandeau aux couleurs du lycée (noir, rouge, or), puis deux grandes entrées ; textes en français et en arabe pour les familles. */
+:root{
+  --bg:#F6F7F5; --surface:#FFFFFF; --ink:#16181A; --muted:#5F666C; --line:#DDE1E0;
+  --red:#B5121B; --gold:#C99613; --black:#16181A; --soft:#FAF1D9;
+  --f-ui:"Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif;
+  --f-display:"Fraunces",Georgia,serif;
+  --f-ar:"Noto Naskh Arabic","Geeza Pro",Arial,serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#121415; --surface:#1C1F21; --ink:#ECEFEF; --muted:#9BA3A8; --line:#30363A;
+  --red:#F06A71; --gold:#E2B54A; --soft:#352C15; color-scheme:dark}}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:16px/1.55 var(--f-ui);
+  padding:env(safe-area-inset-top,0px) max(16px,env(safe-area-inset-right,0px)) 40px max(16px,env(safe-area-inset-left,0px))}
+.stripe{display:flex;height:6px;max-width:960px;margin:0 auto}
+.stripe i{flex:1}.stripe i:nth-child(1){background:var(--black)}.stripe i:nth-child(2){background:var(--red)}.stripe i:nth-child(3){background:var(--gold)}
+@media (prefers-color-scheme:dark){.stripe i:nth-child(1){background:#4a4f53}}
+.wrap{max-width:960px;margin:0 auto;display:grid;gap:28px;padding-top:28px}
+header{display:grid;gap:8px}
+.school{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font:600 clamp(30px,5vw,44px)/1.1 var(--f-display);margin:0;text-wrap:balance}
+.lede{margin:0;max-width:62ch;color:var(--muted)}
+[lang=ar]{font-family:var(--f-ar);direction:rtl;text-align:right}
+.lede.ar{font-size:17px;max-width:none}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.card{background:var(--surface);border:1.5px solid var(--line);border-radius:16px;padding:20px;display:grid;gap:12px;align-content:start}
+.card h2{font:600 24px/1.2 var(--f-display);margin:0}
+.card .who{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--red);font-weight:700}
+.card p{margin:0}
+.card p[lang=ar]{color:var(--muted)}
+.go{display:inline-block;justify-self:start;background:var(--ink);color:var(--bg);text-decoration:none;font-weight:700;border-radius:10px;padding:10px 16px}
+.go:hover{background:var(--red)}
+.classes{display:flex;flex-wrap:wrap;gap:8px}
+.classes a{border:1.5px solid var(--line);border-radius:99px;padding:5px 12px;text-decoration:none;color:var(--ink);font-weight:700;font-size:15px;background:var(--bg)}
+.classes a:hover{border-color:var(--red);color:var(--red)}
+.tip{background:var(--soft);border-radius:12px;padding:12px 16px;font-size:15px}
+.tip p{margin:0}
+footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px;display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:space-between}
+a:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+</style>
+</head>
+<body>
+<div class="stripe" aria-hidden="true"><i></i><i></i><i></i></div>
+<div class="wrap">
+  <header>
+    <div class="school">Lycée libano-allemand · Deutsche Schule Jounieh</div>
+    <h1>Ressources pédagogiques</h1>
+    <p class="lede">Des outils pour apprendre et réviser à la maison les mots travaillés en classe, de la petite section à la terminale.</p>
+    <p class="lede ar" lang="ar">أدوات لتعلّم ومراجعة الكلمات التي يدرسها التلاميذ في الصفّ، من الروضة حتّى الصفّ الثانوي الأخير.</p>
+  </header>
+
+  <section class="cards" aria-label="Ressources">
+    <article class="card">
+      <div class="who">Pour les familles · PS au CE2</div>
+      <h2>Les mots du mois</h2>
+      <p>Chaque mois, un imagier des mots appris en classe. Touchez une image pour l'entendre en français, en allemand, en arabe ou en anglais.</p>
+      <p lang="ar">كلّ شهر، كتيّب مصوّر بالكلمات التي يتعلّمها طفلكم في الصفّ. المسوا الصورة لتسمعوا الكلمة.</p>
+      <div class="classes" aria-label="Choisir la classe">
+        <a href="mots-du-mois/index.html#ps">PS</a><a href="mots-du-mois/index.html#ms">MS</a><a href="mots-du-mois/index.html#gs">GS</a>
+        <a href="mots-du-mois/index.html#cp">CP</a><a href="mots-du-mois/index.html#ce1">CE1</a><a href="mots-du-mois/index.html#ce2">CE2</a>
+      </div>
+    </article>
+    <article class="card">
+      <div class="who">Pour les élèves · CP à la terminale</div>
+      <h2>Les mots des matières</h2>
+      <p>Le vocabulaire et les verbes de consigne de chaque matière, classe par classe. Lexique, cartes, quiz, phrases à trous et dictée de mots.</p>
+      <p lang="ar">مفردات كلّ مادّة وأفعال التعليمات، صفًّا صفًّا، مع بطاقات واختبارات وإملاء.</p>
+      <a class="go" href="lexiques/index.html">Réviser les mots</a>
+    </article>
+  </section>
+
+  <div class="tip">
+    <p><b>Conseil :</b> quelques minutes chaque jour valent mieux qu'une longue séance par semaine. Ajoutez cette page à l'écran d'accueil de votre téléphone pour la retrouver facilement.</p>
+  </div>
+
+  <footer>
+    <span>Lycée libano-allemand – Deutsche Schule Jounieh</span>
+    <span>Mise à jour : octobre 2026</span>
+  </footer>
+</div>
+</body>
+</html>
